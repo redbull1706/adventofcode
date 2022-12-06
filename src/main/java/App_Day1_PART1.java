@@ -6,12 +6,8 @@ import java.util.Iterator;
 public class App_Day1_PART1 extends Application{
 	
 	
-	 String getFileName()   {
-		return "input_day_1.txt";
-	}
-	
 	public String run() throws IOException{
-		Iterator<String> iterator = getIterator(getFileName());
+		Iterator<String> iterator = getIterator(DAY.ONE);
 		int maxCal = 0;
 		int currentElveCal = 0;
 		while (iterator.hasNext()) {

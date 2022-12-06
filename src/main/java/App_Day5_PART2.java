@@ -9,13 +9,9 @@ import java.util.Scanner;
 public class App_Day5_PART2 extends App_Day5{
 	
 	
-	public String getFileName(){
-		return "input_day_5.txt";
-	}
-	
 	public String run() throws IOException{
 		Map<String, LinkedList<String>> stack = initializeStack();
-		Iterator<String> itr = getIterator(getFileName());
+		Iterator<String> itr = getIterator(DAY.FIVE);
 		while (itr.hasNext()) {
 			String line = itr.next();
 			try (Scanner scanner = new Scanner(line).useDelimiter("[^\\d]+")) {

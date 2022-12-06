@@ -9,13 +9,9 @@ public class App_Day3_PART1 extends Application{
 	
 	
 	
-	public String getFileName()   {
-		return "input_day_3.txt";
-	}
-	
 	public String run() throws IOException{
 		
-		Iterator<String> iterator = getIterator(getFileName());
+		Iterator<String> iterator = getIterator(DAY.THREE);
 		List<String> found = new ArrayList<>();
 		while (iterator.hasNext()) {
 			String line = iterator.next();

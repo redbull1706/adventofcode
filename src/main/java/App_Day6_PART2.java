@@ -6,13 +6,9 @@ import java.util.Iterator;
 public class App_Day6_PART2  extends Application{
 	
 	
-	public String getFileName() {
-		return "input_day_6.txt";
-	}
-	
 	public String run() throws IOException {
 		
-		Iterator<String> itr = getIterator(getFileName());
+		Iterator<String> itr = getIterator(DAY.SIX);
 		String code = "";
 		while (itr.hasNext()) {
 			String line = itr.next();

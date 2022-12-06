@@ -5,14 +5,9 @@ import java.util.Iterator;
 
 public class App_Day2_PART2 extends Application{
 	
-	
-	public String getFileName()   {
-		return "input_day_2.txt";
-	}
-	
 	public String run() throws IOException {
 		
-		Iterator<String> iterator = getIterator(getFileName());
+		Iterator<String> iterator = getIterator(DAY.TWO);
 		int points = 0;
 		while (iterator.hasNext()) {
 			String line = iterator.next();

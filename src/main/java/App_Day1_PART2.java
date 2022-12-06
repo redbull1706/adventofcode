@@ -6,13 +6,9 @@ import java.util.Iterator;
 public class App_Day1_PART2 extends Application{
 	
 	
-	String getFileName()   {
-		return "input_day_1.txt";
-	}
-	
 	public String run() throws IOException{
 		
-		Iterator<String> iterator = getIterator(getFileName());
+		Iterator<String> iterator = getIterator(DAY.ONE);
 		int firstMostCal = 0;
 		int secondMostCal = 0;
 		int thirdMostCal = 0;

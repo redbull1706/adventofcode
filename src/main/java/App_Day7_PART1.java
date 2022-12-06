@@ -3,12 +3,12 @@ package main.java;
 import java.io.IOException;
 import java.util.Iterator;
 
-public class App_Day6_PART1 extends Application{
+public class App_Day7_PART1 extends Application{
 	
 	
 	public String run() throws IOException{
 		
-		Iterator<String> iterator = getIterator(DAY.SIX);
+		Iterator<String> iterator = getIterator(DAY.SEVEN);
 		String code = "";
 		while (iterator.hasNext()) {
 			String line = iterator.next();
