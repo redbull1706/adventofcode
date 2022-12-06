@@ -6,7 +6,7 @@ import java.util.Iterator;
 public class App_Day2_PART1 extends Application{
 	
 	public String run() throws IOException {
-		Iterator<String> iterator = getIterator(DAY.TWO);
+		Iterator<String> iterator = getIterator(Day.TWO);
 		int points = 0;
 		while (iterator.hasNext()) {
 			String line = iterator.next();

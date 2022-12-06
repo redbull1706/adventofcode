@@ -11,7 +11,7 @@ public class App_Day3_PART1 extends Application{
 	
 	public String run() throws IOException{
 		
-		Iterator<String> iterator = getIterator(DAY.THREE);
+		Iterator<String> iterator = getIterator(Day.THREE);
 		List<String> found = new ArrayList<>();
 		while (iterator.hasNext()) {
 			String line = iterator.next();

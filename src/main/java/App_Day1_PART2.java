@@ -8,7 +8,7 @@ public class App_Day1_PART2 extends Application{
 	
 	public String run() throws IOException{
 		
-		Iterator<String> iterator = getIterator(DAY.ONE);
+		Iterator<String> iterator = getIterator(Day.ONE);
 		int firstMostCal = 0;
 		int secondMostCal = 0;
 		int thirdMostCal = 0;

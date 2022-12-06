@@ -8,7 +8,7 @@ public class App_Day6_PART2  extends Application{
 	
 	public String run() throws IOException {
 		
-		Iterator<String> itr = getIterator(DAY.SIX);
+		Iterator<String> itr = getIterator(Day.SIX);
 		String code = "";
 		while (itr.hasNext()) {
 			String line = itr.next();

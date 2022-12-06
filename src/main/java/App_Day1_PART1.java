@@ -7,7 +7,7 @@ public class App_Day1_PART1 extends Application{
 	
 	
 	public String run() throws IOException{
-		Iterator<String> iterator = getIterator(DAY.ONE);
+		Iterator<String> iterator = getIterator(Day.ONE);
 		int maxCal = 0;
 		int currentElveCal = 0;
 		while (iterator.hasNext()) {

@@ -12,7 +12,7 @@ public class Application {
 	static final String FILE = "input_day_XY.txt"; 
 	static final String PLACEHOLDER = "XY";
 	
-	public Iterator<String> getIterator(DAY day) throws IOException{
+	public Iterator<String> getIterator(Day day) throws IOException{
 		return Files.readAllLines(Paths.get(new File(FILE.replace(PLACEHOLDER,String.valueOf(day.ordinal()+1) )).getAbsolutePath()), StandardCharsets.UTF_8).iterator();
 	}
 	

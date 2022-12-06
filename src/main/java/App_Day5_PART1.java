@@ -12,7 +12,7 @@ public class App_Day5_PART1 extends App_Day5{
 	
 	public String run() throws IOException {
 		Map<String, LinkedList<String>> stack = initializeStack();
-		Iterator<String> itr = getIterator(DAY.FIVE);
+		Iterator<String> itr = getIterator(Day.FIVE);
 		while (itr.hasNext()) {
 			String line = itr.next();
 			try (Scanner scanner = new Scanner(line).useDelimiter("[^\\d]+")) {
