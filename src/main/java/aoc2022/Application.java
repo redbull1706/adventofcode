@@ -1,7 +1,8 @@
-package main.java;
+package aoc2022;
 
-import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -13,7 +14,12 @@ public class Application {
 	static final String PLACEHOLDER = "XY";
 	
 	public Iterator<String> getIterator(Day day) throws IOException{
-		return Files.readAllLines(Paths.get(new File(FILE.replace(PLACEHOLDER,String.valueOf(day.ordinal()+1) )).getAbsolutePath()), StandardCharsets.UTF_8).iterator();
+		try {
+			URL resource = getClass().getClassLoader().getResource(FILE.replace(PLACEHOLDER,String.valueOf(day.ordinal()+1) ));
+			return Files.readAllLines(Paths.get(resource.toURI()), StandardCharsets.UTF_8).iterator();
+		}catch(URISyntaxException use) {
+			throw new IOException("could'nt read file");
+		}
 	}
 	
 	public static void main(String[] args) throws IOException {

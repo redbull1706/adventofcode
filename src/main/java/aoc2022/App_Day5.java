@@ -1,4 +1,4 @@
-package main.java;
+package aoc2022;
 
 import java.util.HashMap;
 import java.util.LinkedList;

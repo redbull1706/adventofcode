@@ -1,4 +1,4 @@
-package main.java;
+package aoc2022;
 
 public enum Day {
 	ONE, TWO,THREE,FOUR,FIVE,SIX,SEVEN,EIGHT,NINE,TEN,

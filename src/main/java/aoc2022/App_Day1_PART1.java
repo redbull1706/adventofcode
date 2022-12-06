@@ -1,4 +1,4 @@
-package main.java;
+package aoc2022;
 
 import java.io.IOException;
 import java.util.Iterator;
