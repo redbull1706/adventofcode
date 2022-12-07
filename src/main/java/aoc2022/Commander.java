@@ -54,10 +54,9 @@ public class Commander {
 		return directoryTree;
 	}
 	
-//	public Map<String, MyFile> getFiles(String parentFolder) {
-//		
-//		return fileTree;
-//	}
+	public Map<String, MyFile> getFiles(String parentFolder) {
+		return fileTree;
+	}
 
 	public void moveDirUp() {
 		root = previousroot;
